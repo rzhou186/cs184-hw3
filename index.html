@@ -3,16 +3,63 @@
 
   <head>
     <title>Demo</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      p {
+        background-color: "red";
+      }
+      .bordered {
+        border: 3px solid;
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Welcome!</h1>
     <h2>This is my website.</h2>
     <h3>Glad you like it.</h3>
-    <p>Here's a paragraph. Yeah, it's a short paragraph. But it'll do for now. Check out the list below!</p>
+    <p>Here's a paragraph. Yeah, it's a <em>short</em> paragraph. But it'll do for now.</p>
+    <br>
+    <p>Check out the <strong>unordered</strong> list below!</p>
     <ul>Item 1</ul>
     <ul>Item 2</ul>
-    <a href="http://www.google.com">Click here to visit website!</a>
+    <p>Now check out the <strong>ordered</strong> list below!</p>
+    <ol>Item 1</ol>
+    <ol>Item 2</ol>
+    <br>
+    <a href="http://www.google.com">Click here to visit a famous website!</a>
+    <br>
+    <p>Now check out the bordered table below.</p>
+    <p>Note that the border is 3px in width and solid, with rounded corners.</p>
+    <table class="bordered">
+      <thead>
+	<tr>
+	  <th>First Name</th>
+	  <th>Last Name</th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>Ray</td>
+	  <td>Zhou</td>
+	</tr>
+	<tr>
+	  <td>Justin</td>
+	  <td>Sao</td>
+	</tr>
+      </tbody>
+    </table>
   </body>
+
+  <script>
+    window.onload = function(){
+      alert("My first Javascript alert!");
+    }
+  </script>
 
 </html>
